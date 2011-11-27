@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/pedro/.vim/bundle'
+let g:netrw_dirhist_2='/Users/pedro/Code/git/site/views'
+let g:netrw_dirhist_3='/Users/pedro/Code'
+let g:netrw_dirhist_4='/Users/pedro/Code/git/site/views'
+let g:netrw_dirhist_5='/Users/pedro/Code/git/site/public/images'
+let g:netrw_dirhist_6='/Users/pedro/Code'
