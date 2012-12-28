@@ -1,0 +1,21 @@
+[user]
+    name = Pedro Carvalho
+    email = pedro@betabranch.com
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[branch "development"]
+    remote = origin
+    merge = refs/heads/development
+[core]
+    editor = /usr/local/bin/vim
+    excludesfile = /Users/pedro/.gitignore_global
+[alias]
+    ci = commit
+    co = checkout
+    st = status -s
+    br = branch
+    df = diff
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all 
+[color]
+    ui = auto
