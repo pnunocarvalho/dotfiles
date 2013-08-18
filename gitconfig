@@ -7,9 +7,6 @@
 [branch "development"]
     remote = origin
     merge = refs/heads/development
-[core]
-    editor = /usr/local/bin/vim
-    excludesfile = /Users/pedro/.gitignore_global
 [alias]
     ci = commit
     co = checkout
