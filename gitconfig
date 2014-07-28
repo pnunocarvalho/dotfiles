@@ -1,12 +1,6 @@
 [user]
     name = Pedro Carvalho
     email = incude@gmail.com
-[branch "master"]
-    remote = origin
-    merge = refs/heads/master
-[branch "development"]
-    remote = origin
-    merge = refs/heads/development
 [alias]
     ci = commit -v
     amend = commit --amend
@@ -16,15 +10,14 @@
     rt = remote -v
     df = diff
     dc = diff --cached
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all 
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+    churn = "!f() { git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | sort -g; }; f"
+    conflicted = "diff --name-only --diff-filter=U"
+
     unstage = reset HEAD
     uncommit = reset --soft 'HEAD^'
 [color]
     ui = auto
-    diff = auto
-    branch = auto
-    status = auto
-    interactive = auto
 [push]
     default = simple
 [core]
